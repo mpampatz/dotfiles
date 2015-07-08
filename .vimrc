@@ -40,7 +40,7 @@ noremap <Space> gg
 " nnoremap h <nop>
 " nnoremap l <nop>
 " Training-Reminder List
-let trs = ["Training-Reminder List:", ".", "m", "i_CTRL-O"]
+let trs = ["Training-Reminder List:", ".", ";", "m", "i_CTRL-O"]
 nmap <Space> gg:echo join(trs, ' ')
 
 
