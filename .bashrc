@@ -9,7 +9,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown'
-alias wifi='sudo wifi-menu wlp3s0'
 
 # Prompt
 #PS1='[\u@\h \W]\$ '
