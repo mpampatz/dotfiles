@@ -29,3 +29,5 @@ set -o vi
 alias grin='grep -r -i -n --color=auto'
 # VIm Read-Only
 alias rov='vim -R'
+# quick list dotfiles
+alias lsa='ls -a'
