@@ -28,4 +28,4 @@ set -o vi
 # grep recursively, ignore case and print line-number
 alias grin='grep -r -i -n --color=auto'
 # VIm Read-Only
-alias vimr='vim -R'
+alias rov='vim -R'
