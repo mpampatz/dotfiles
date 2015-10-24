@@ -46,7 +46,7 @@ inoremap ` ``<Left>
 nnoremap ZZ <nop>
 nnoremap ZQ <nop>
 
-" All custom
+" Getting here
 nnoremap <leader>rc :source $MYVIMRC
 nnoremap <leader>grc :source $MYGVIMRC
 nnoremap <leader>S :colorscheme solarized
