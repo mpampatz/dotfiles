@@ -9,8 +9,6 @@ alias ls='ls --color=auto --show-control-chars -h'
 alias grep='grep --color=auto'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown'
-alias wifi='sudo wifi-menu wlp3s0'
-#alias vim='gvim'
 
 # Prompt
 #PS1='[\u@\h \W]\$ '
@@ -18,7 +16,7 @@ alias wifi='sudo wifi-menu wlp3s0'
 PS1='\[\e[1;30m\][\[\e[1;36m\]\u\[\e[0m\]\[\e[1;30m\]@\H\[\e[0m\] \w\[\e[0m\]\[\e[1;30m\]]\$ \[\e[0m\]'
 PROMPT_DIRTRIM=3 # - - - - - - - - - - - - - - - - - - - - - - - - ^
 
-# TAB auto-complete for 'man' and 'sudo'
+# TAB 'command' auto-complete for 'man' and 'sudo'
 complete -cf man
 complete -cf sudo
 complete -cf which
@@ -32,17 +30,19 @@ alias rm='rm -i'
 # Devel Shortcuts
 
 # grep recursively, ignore case and print line-number
-alias grin='grep -r -i -n --include=*.f90 --color=auto'
+alias grin='grep -r -i -n --color=auto'
+
 # VIm Read-Only
 alias rov='vim -R' 
+
 # quick list dotfiles
 alias lsa='ls -a --show-control-chars'
-# for regular user
-#alias vim='gvim'
+
 # what is says
 function cl() {
 cd $1 ; ls --color=auto
 }
+
 # like grin but find the subroutine too!
 alias grins='~/Sources/bash/subrgrep/grins'
 
