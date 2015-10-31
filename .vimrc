@@ -14,10 +14,10 @@ set incsearch
 
 " Other useful stuff
 color desert
-syntax on
 set autoindent
 set relativenumber
 set ignorecase
+set cursorline
 
 " Tab options
 set tabstop=8      " real tabs are displayed as 8 spaces
@@ -50,6 +50,14 @@ nnoremap ZQ <nop>
 nnoremap <leader>rc :source $MYVIMRC
 nnoremap <leader>grc :source $MYGVIMRC
 nnoremap <leader>S :colorscheme solarized
+
+" For fortran
+let fortran_fold=1
+let fortran_free_source=1
+set foldmethod=syntax
+
+" As required by fortran parameters. See :help fortran
+syntax on
 
 " For LaTeX
 filetype plugin indent on
