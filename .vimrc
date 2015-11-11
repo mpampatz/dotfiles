@@ -18,6 +18,7 @@ set autoindent
 set relativenumber
 set ignorecase
 set cursorline
+set nowrap
 
 " Tab options
 set tabstop=8      " real tabs are displayed as 8 spaces
@@ -34,13 +35,13 @@ set encoding=utf-8
 " This is very practical indeed
 noremap <Space> gg
 
-" Fill closing 'parens'
-inoremap ( ()<Left>
-inoremap [ []<Left>
-inoremap { {}<Left>
-inoremap " ""<Left>
-inoremap ' ''<Left>
-inoremap ` ``<Left>
+" Fill closing 'parens'. No more cause of surround!
+"inoremap ( ()<Left>
+"inoremap [ []<Left>
+"inoremap { {}<Left>
+"inoremap " ""<Left>
+"inoremap ' ''<Left>
+"inoremap ` ``<Left>
 
 " Just for safety...
 nnoremap ZZ <nop>
@@ -52,9 +53,9 @@ nnoremap <leader>grc :source $MYGVIMRC
 nnoremap <leader>S :colorscheme solarized
 
 " For fortran
-let fortran_fold=1
+"let fortran_fold=1 seems laggy
+"set foldmethod=syntax
 let fortran_free_source=1
-set foldmethod=syntax
 
 " As required by fortran parameters. See :help fortran
 syntax on
