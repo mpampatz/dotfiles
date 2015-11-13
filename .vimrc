@@ -56,12 +56,15 @@ nnoremap <leader>S :colorscheme solarized
 "let fortran_fold=1 seems laggy
 "set foldmethod=syntax
 let fortran_free_source=1
+let fortran_do_enddo=1
+let fortran_indent_less=1
+filetype plugin indent on
 
 " As required by fortran parameters. See :help fortran
 syntax on
 
 " For LaTeX
-filetype plugin indent on
+"filetype plugin indent on          "already set for fortran
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
