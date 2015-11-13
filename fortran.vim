@@ -88,8 +88,8 @@ endfunction
 "-------------end of declarations-------------------
 
 "------- configuration -------------
-let s:cout_str = '!--basil_debug--'
-let s:cin_str =  '!++basil_debug++'
+let s:cout_str = '!--user_debug--'
+let s:cin_str =  '!++user_debug++'
 let s:fwrite = 'write(*,*) '
 "------- end of configuration ------
 
